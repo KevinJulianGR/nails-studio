@@ -265,15 +265,12 @@ p {
         width: 100%;
         height: 100%;
         background-color: white;
+        align-items: center;
     }
     
-    .linea {
-        height: 4px;
-        width: 100%;
-        margin-top: 10%;
-        margin-left: 5%;
-        background-color: var(--color-texto);
-        border-radius: 2px;
+    .icono-menu{
+        height: 100%;
+        width: 80%;
     }
 
     /* Nuevo menú desplegable */
@@ -298,6 +295,10 @@ p {
         text-decoration: none;
     }
 
+    .logo{
+      width: 40%;
+    }
+
     .informacion-negocio {
         height: 60%;
         width: 50%;
@@ -313,5 +314,62 @@ p {
     .icono-red{
         height: 45px;
         width: 65px;
+    }
+
+}
+
+
+/*Vista celular*/
+@media (max-width: 480px) {
+
+    .menu-hamburguesa {
+        gap: 0px;
+    }
+    
+    .icono-menu{
+        height: 100%;
+        width: 80%;
+    }
+
+    
+    .menu-botones-desplegado {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 15px;
+        position: absolute;
+        top: 50px; 
+        background-color: var(--color-sombras);
+        width: 200px; 
+        max-height: 30%; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+        border-radius: 8px; 
+        z-index: 1000;
+        transition: all 0.3s ease-in-out; 
+    }
+    
+    .menu-botones-desplegado a {
+        font-size: 10px; 
+        text-decoration: none;
+    }
+
+    .logo{
+      width: 60%;
+    }
+
+    .informacion-negocio {
+        height: 60%;
+        width: 70%;
+        gap: 10px;
+        margin-top: 3%;
+    }
+
+    .boton-informacion{
+        font-size: 10px;
+    }
+
+    .icono-red{
+        height: 35px;
+        width: 45px;
     }
 }
