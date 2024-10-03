@@ -37,6 +37,9 @@ a {
     color: black;
 }
 
+.menu-hamburguesa{
+    display: none;
+}
 .menu {
     display: grid;
     grid-area: menu;
@@ -333,12 +336,9 @@ p {
 
     
     .menu-botones-desplegado {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
         gap: 15px;
         position: absolute;
-        top: 50px; 
+        top: 55px; 
         background-color: var(--color-sombras);
         width: 200px; 
         max-height: 30%; 
@@ -349,7 +349,7 @@ p {
     }
     
     .menu-botones-desplegado a {
-        font-size: 10px; 
+        font-size: 15px; 
         text-decoration: none;
     }
 
@@ -358,18 +358,18 @@ p {
     }
 
     .informacion-negocio {
-        height: 60%;
-        width: 70%;
+        height: 65%;
+        width: 90%;
         gap: 10px;
         margin-top: 3%;
     }
 
     .boton-informacion{
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .icono-red{
-        height: 35px;
-        width: 45px;
+        height: 50px;
+        width: 55px;
     }
 }
