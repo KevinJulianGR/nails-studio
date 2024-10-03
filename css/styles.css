@@ -247,17 +247,16 @@ p {
         align-items: center;
     }
     
-    .menu-botones{
-        height: 100%;
-        width: 100%;
-        grid-area: menu-botones;
+    .menu-botones {
         display: none;
-        justify-content: center;
-        align-items: center;
-        gap: 200px;
-        font-family: "Inknut Antiqua", serif;
-        font-size: 15px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
         background-color: var(--color-sombras);
+        padding: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
     }
     
     .menu-hamburguesa {
@@ -306,12 +305,12 @@ p {
         height: 60%;
         width: 50%;
         gap: 10px;
-        margin-top: 3%;
+        margin-top: 10%;
        
     }
 
     .boton-informacion{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .icono-red{
@@ -338,7 +337,6 @@ p {
     .menu-botones-desplegado {
         gap: 15px;
         position: absolute;
-        top: 75px; 
         background-color: var(--color-sombras);
         width: 200px; 
         max-height: 30%; 
@@ -361,7 +359,7 @@ p {
         height: 55%;
         width: 75%;
         gap: 10px;
-        margin-top: 3%;
+        margin-top: 10%;
     }
 
     .boton-informacion{
