@@ -232,7 +232,7 @@ p {
             "menu-botones contenedor-logo"
             
         ;
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 15% 85%;
         grid-template-rows: 100%;
         align-items: center;
     }
@@ -338,7 +338,7 @@ p {
     .menu-botones-desplegado {
         gap: 15px;
         position: absolute;
-        top: 55px; 
+        top: 75px; 
         background-color: var(--color-sombras);
         width: 200px; 
         max-height: 30%; 
@@ -349,7 +349,7 @@ p {
     }
     
     .menu-botones-desplegado a {
-        font-size: 15px; 
+        font-size: 12px; 
         text-decoration: none;
     }
 
@@ -358,18 +358,18 @@ p {
     }
 
     .informacion-negocio {
-        height: 65%;
-        width: 90%;
+        height: 55%;
+        width: 75%;
         gap: 10px;
         margin-top: 3%;
     }
 
     .boton-informacion{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .icono-red{
-        height: 50px;
+        height: 55px;
         width: 55px;
     }
 }
