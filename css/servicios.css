@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "menu"
+        "seccion-servicios"
+        "contacto"
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 80% 5%;
+}
+
+.seccion-servicios {
+    grid-area: seccion-servicios;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen-servicio {
+    min-height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#imagen-referencia {
+    margin-top: 1%;
+    margin-right: 3%;
+    height: 95%;
+    width: 25%;
+    border: solid white;
+    box-shadow: 0px 4px 10px #ffc1d3;
+    border-radius: 100% 100% 0 0;
+}
+
+#ofertas {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-siguenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 100px 0 100px 0;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px #ffc1d3;
+    margin-left: 40%;
+}
+
+#boton-siguenos:hover{
+    transform: scale(1.1);
+    background-color: var(--color-sombras);
+}
+
+
+#parrafo-siguenos {
+    margin-left: 40%;
+    width: 320px;
+    text-align: justify;
+}
+
+#combos {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-combos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 100px 0 100px 0;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px #ffc1d3;
+    margin-right: 80%;
+}
+
+#boton-combos:hover{
+    transform: scale(1.1);
+    background-color: var(--color-sombras);
+}
+
+#parrafo-combos {
+    margin-right: 80%;
+    width: 320px;
+    text-align: justify;
+}
+
+#seccion-precios {
+    width: 90%;
+    height: auto;
+}
+
+#seccion-unas {
+    height: auto;
+    min-width: 100%;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px #ffc1d3;
+}
+
+#precios-unas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto-unas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    height: 100px;
+    gap: 55px;
+}
+
+.producto-unas .precio {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+#seccion-depilacion {
+    height: auto;
+    min-width: 100%;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px #ffc1d3;
+}
+
+#precios-depilacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.producto-depilacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    height: 100px;
+    gap: 55px;
+}
+
+.producto-depilacion .precio {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+#seccion-cejas {
+    height: auto;
+    min-width: 100%;
+    margin-top: 2%;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px #ffc1d3;
+}
+
+#precios-cejas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-left: -5px;
+}
+
+.producto-cejas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    height: 100px;
+    gap: 155px;
+}
+
+.producto-cejas .precio {
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
