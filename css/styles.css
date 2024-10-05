@@ -25,11 +25,17 @@ body {
 }
 
 #fondo {
-    position: absolute;
-    height: 100%;
+    position: fixed; /* Fija el fondo en la pantalla */
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     z-index: -1;
     filter: brightness(0.9);
+    background-image: url('../images/Fondo.jpeg'); /* Cambia por la ruta de tu imagen */
+    background-size: cover; /* Cubre toda el área sin distorsionar */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
 }
 
 a {
@@ -157,8 +163,6 @@ strong{
 #icono-whatsapp{
     margin-left: 7%;
 }
-
-
 
 .boton-informacion:hover {
     transform: scale(1.1);
@@ -305,7 +309,7 @@ p {
         height: 60%;
         width: 50%;
         gap: 10px;
-        margin-top: 10%;
+        margin-top: 5%;
        
     }
 
@@ -313,9 +317,14 @@ p {
         font-size: 12px;
     }
 
+    .redes-sociales{
+        height: 25%;
+        width: 40%;
+    }
+
     .icono-red{
-        height: 45px;
-        width: 65px;
+        height: 100%;
+        width: 100%;
     }
 
 }
@@ -329,7 +338,7 @@ p {
     }
     
     .icono-menu{
-        height: 100%;
+        height: 80%;
         width: 80%;
     }
 
@@ -366,8 +375,12 @@ p {
         font-size: 12px;
     }
 
+    .redes-sociales{
+        height: 15%;
+        width: 50%;
+    }
     .icono-red{
-        height: 55px;
-        width: 55px;
+        height: 100%;
+        width: 100%;
     }
 }
