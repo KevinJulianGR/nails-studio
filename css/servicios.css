@@ -12,6 +12,48 @@ body {
     grid-template-rows: 15% 80% 5%;
 }
 
+.whatsapp-container {
+    position: fixed;
+    bottom: 15px; 
+    right: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.whatsapp-button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+
+.whatsapp-message {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    width: 200px;
+    position: absolute;
+    right: 80px; 
+    bottom: 0px; 
+}
+
+.whatsapp-container:hover .whatsapp-message {
+    opacity: 1;
+}
+
 .seccion-servicios {
     grid-area: seccion-servicios;
     display: flex;
@@ -113,7 +155,7 @@ p {
     margin-right: 80%;
     width: 290px;
     text-align: justify;
-    
+
 }
 
 #seccion-precios {
@@ -224,3 +266,186 @@ p {
     font-size: 1.2em;
 }
 
+/*Vista tablet*/
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "menu"
+            "seccion-servicios"
+            "contacto"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 85% 5%;
+    }
+
+
+    #imagen-servicio {
+        min-height: 90%;
+        width: 80%;
+    }
+
+    #imagen-referencia {
+        margin-right: 0;
+        height: 95%;
+        width: 35%;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    #boton-siguenos {
+        height: 80px;
+        width: 200px;
+        font-size: 10px;
+        margin-left: -40px;
+    }
+
+
+    #parrafo-siguenos {
+        margin-left: -25px;
+        width: 200px;
+        text-align: justify;
+    }
+
+
+    #boton-combos {
+        height: 80px;
+        width: 200px;
+        font-size: 10px;
+        margin-right: 0%;
+    }
+
+
+
+    p {
+        font-family: "Inknut Antiqua", serif;
+        font-size: 12px;
+    }
+
+    #parrafo-combos {
+        margin-right: 0%;
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+
+    #precios-unas {
+        gap: 10px;
+    }
+
+    .producto-unas {
+        gap: 55px;
+    }
+
+    .producto {
+        font-size: 10px;
+    }
+
+    .producto-unas .precio {
+        font-size: 10px;
+    }
+
+    #precios-depilacion {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .producto-depilacion {
+        gap: 55px;
+    }
+
+
+    .producto-depilacion .precio {
+        font-size: 10px;
+    }
+
+    .producto-cejas .precio {
+        font-size: 10px;
+    }
+}
+
+/*Vista celular*/
+@media (max-width: 480px) {
+    #imagen-servicio {
+        min-height: 70%;
+        width: 80%;
+        gap: 0;
+        justify-content: center;
+    }
+
+    #imagen-referencia {
+        margin-right: 0;
+        height: 90%;
+        width: 75%;
+        order: -1;
+        gap: 0;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    #ofertas{
+        display: none;
+    }
+
+    #combos {
+        display: none;
+    }
+
+
+    p {
+        font-size: 10px;
+    }
+
+
+    h2 {
+        font-size: 15px;
+    }
+
+
+    #precios-unas {
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto-unas {
+        gap: 5px;
+    }
+
+    .producto {
+        font-size: 10px;
+    }
+
+    .producto-unas .precio {
+        font-size: 10px;
+    }
+
+    #precios-depilacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .producto-depilacion {
+        gap: 5px;
+    }
+
+
+    .producto-depilacion .precio {
+        font-size: 10px;
+    }
+
+    .producto-depilacion {
+        gap: 5px;
+    }
+
+    .producto-cejas .precio {
+        font-size: 10px;
+    }
+}
