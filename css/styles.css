@@ -46,6 +46,7 @@ a {
 .menu-hamburguesa{
     display: none;
 }
+
 .menu {
     display: grid;
     grid-area: menu;
@@ -169,7 +170,7 @@ strong{
     background-color: var(--color-sombras);
 }
 
-p {
+#siguenos-index {
     font-family: "Inknut Antiqua", serif;
     font-size: 15px;
     font-weight: bold;
@@ -323,7 +324,7 @@ p {
     }
 
     .icono-red{
-        height: 60%;
+        height: 20%;
         width: 100%;
     }
 
@@ -376,7 +377,7 @@ p {
     }
 
     .redes-sociales{
-        height: 15%;
-        width: 50%;
+        height: 20%;
+        width: 60%;
     }
 }

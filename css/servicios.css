@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 #boton-siguenos {
@@ -61,7 +62,7 @@ body {
     margin-left: 40%;
 }
 
-#boton-siguenos:hover{
+#boton-siguenos:hover {
     transform: scale(1.1);
     background-color: var(--color-sombras);
 }
@@ -69,7 +70,7 @@ body {
 
 #parrafo-siguenos {
     margin-left: 40%;
-    width: 320px;
+    width: 290px;
     text-align: justify;
 }
 
@@ -79,6 +80,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 
 #boton-combos {
@@ -97,15 +99,21 @@ body {
     margin-right: 80%;
 }
 
-#boton-combos:hover{
+#boton-combos:hover {
     transform: scale(1.1);
     background-color: var(--color-sombras);
 }
 
+p {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 12px;
+}
+
 #parrafo-combos {
     margin-right: 80%;
-    width: 320px;
+    width: 290px;
     text-align: justify;
+    
 }
 
 #seccion-precios {
@@ -137,13 +145,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     height: 100px;
     gap: 55px;
 }
 
 .producto-unas .precio {
-    font-weight: bold;
     color: black;
     font-size: 1.2em;
 }
@@ -172,13 +179,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     height: 100px;
-    gap: 55px;
+    gap: 35px;
 }
 
 .producto-depilacion .precio {
-    font-weight: bold;
     color: black;
     font-size: 1.2em;
 }
@@ -208,13 +214,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     height: 100px;
-    gap: 155px;
+    gap: 135px;
 }
 
 .producto-cejas .precio {
-    font-weight: bold;
     color: black;
     font-size: 1.2em;
 }
+
